@@ -46,6 +46,7 @@ def login_and_save(page, context):
 
 def extract_and_save(page):
     print("tests")
+    ##currently extract_and_save doesn't work past here
     page.wait_for_selector(".company-card", timeout=10000)
     print("2")
     companies = page.query_selector_all(".company-card")
